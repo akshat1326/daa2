@@ -1,0 +1,40 @@
+\hypertarget{dfs__function_8h}{}\doxysection{dfs\+\_\+function.\+h File Reference}
+\label{dfs__function_8h}\index{dfs\_function.h@{dfs\_function.h}}
+{\ttfamily \#include $<$bits/stdc++.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{dfs__function_8h_ac4aa0a5767294b72d613aa922d705d12}{DFS}} (unordered\+\_\+map$<$ int, unordered\+\_\+set$<$ int $>$$>$ \&adj, unordered\+\_\+map$<$ int, unordered\+\_\+set$<$ int $>$$>$ \&adjT, int v, bool visited\mbox{[}$\,$\mbox{]}, stack$<$ int $>$ \&s, bool flag)
+\begin{DoxyCompactList}\small\item\em This is a recursive function used to perform DFS i.\+e. depth first search . \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{dfs__function_8h_ac4aa0a5767294b72d613aa922d705d12}\label{dfs__function_8h_ac4aa0a5767294b72d613aa922d705d12}} 
+\index{dfs\_function.h@{dfs\_function.h}!DFS@{DFS}}
+\index{DFS@{DFS}!dfs\_function.h@{dfs\_function.h}}
+\doxysubsubsection{\texorpdfstring{DFS()}{DFS()}}
+{\footnotesize\ttfamily void DFS (\begin{DoxyParamCaption}\item[{unordered\+\_\+map$<$ int, unordered\+\_\+set$<$ int $>$$>$ \&}]{adj,  }\item[{unordered\+\_\+map$<$ int, unordered\+\_\+set$<$ int $>$$>$ \&}]{adjT,  }\item[{int}]{v,  }\item[{bool}]{visited\mbox{[}$\,$\mbox{]},  }\item[{stack$<$ int $>$ \&}]{s,  }\item[{bool}]{flag }\end{DoxyParamCaption})}
+
+
+
+This is a recursive function used to perform DFS i.\+e. depth first search . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em adj} & \+: is the address of the adjacency list of the graph on which we are working. \\
+\hline
+{\em adjT} & \+: is the address of the transposed adjacency list of the graph on which we are working. \\
+\hline
+{\em v} & \+: denotes the number of nodes in the graph \\
+\hline
+{\em visited} & \+: is the boolean array used to mark the visited vertices. \\
+\hline
+{\em s} & \+: is the stack on which edges are pushed while parsing the adjacency list and performing dfs. \\
+\hline
+{\em } & is the stack on which edges are pushed while parsing the adjacency list and performing dfs. \\
+\hline
+{\em } & is the stack on which edges are pushed while parsing the adjacency list and performing dfs. \\
+\hline
+{\em } & is a boolean variable which tells whether we are calling dfs for adjacency list and storing in the stack or for the transposed adjacency matrix. \\
+\hline
+\end{DoxyParams}

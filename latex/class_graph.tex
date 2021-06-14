@@ -1,0 +1,88 @@
+\hypertarget{class_graph}{}\doxysection{Graph Class Reference}
+\label{class_graph}\index{Graph@{Graph}}
+
+
+{\ttfamily \#include $<$class\+\_\+graph.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_graph_af1e3433a07b4a6d14b9c903eb97632a4}{initialise\+\_\+graph}} (int \mbox{\hyperlink{class_graph_a23324531ae99747b494ef163d9339da7}{v}})
+\item 
+void \mbox{\hyperlink{class_graph_a95cc61669efe850c55d9d281da8620bf}{add\+\_\+edge}} (int a, int b)
+\item 
+int \mbox{\hyperlink{class_graph_ad280efefe7ed62f71c3b887d72f8681d}{find\+SCC}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_graph_a23324531ae99747b494ef163d9339da7}{v}}
+\item 
+unordered\+\_\+map$<$ int, unordered\+\_\+set$<$ int $>$ $>$ \mbox{\hyperlink{class_graph_ae1c6de99c64d91207da0d5d9693e1de6}{adj}}
+\item 
+unordered\+\_\+map$<$ int, unordered\+\_\+set$<$ int $>$ $>$ \mbox{\hyperlink{class_graph_a826c94cb68830f7aac37c4f998abbb92}{adjT}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the main section of the code.~\newline
+It comprises of the \mbox{\hyperlink{class_graph}{Graph}} class which contains all the important function to find the strongly connected components.~\newline
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_graph_a95cc61669efe850c55d9d281da8620bf}\label{class_graph_a95cc61669efe850c55d9d281da8620bf}} 
+\index{Graph@{Graph}!add\_edge@{add\_edge}}
+\index{add\_edge@{add\_edge}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{add\_edge()}{add\_edge()}}
+{\footnotesize\ttfamily void Graph\+::add\+\_\+edge (\begin{DoxyParamCaption}\item[{int}]{a,  }\item[{int}]{b }\end{DoxyParamCaption})}
+
+This function is used to store the edge from a to b in the adjacency list and an edge from b to a in the transposed adjacency matrix. 
+\begin{DoxyParams}{Parameters}
+{\em a} & \+: refers to the first end point of the edge\\
+\hline
+{\em a} & \+: refers to the second end point of the edge . \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_graph_ad280efefe7ed62f71c3b887d72f8681d}\label{class_graph_ad280efefe7ed62f71c3b887d72f8681d}} 
+\index{Graph@{Graph}!findSCC@{findSCC}}
+\index{findSCC@{findSCC}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{findSCC()}{findSCC()}}
+{\footnotesize\ttfamily int Graph\+::find\+SCC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This is the main function which is used to find the strongly connected components in the graph which is called by the main function and it calls all other function to perform the task . \mbox{\Hypertarget{class_graph_af1e3433a07b4a6d14b9c903eb97632a4}\label{class_graph_af1e3433a07b4a6d14b9c903eb97632a4}} 
+\index{Graph@{Graph}!initialise\_graph@{initialise\_graph}}
+\index{initialise\_graph@{initialise\_graph}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{initialise\_graph()}{initialise\_graph()}}
+{\footnotesize\ttfamily void Graph\+::initialise\+\_\+graph (\begin{DoxyParamCaption}\item[{int}]{v }\end{DoxyParamCaption})}
+
+This is the initialization function which acts as a constructor. 
+\begin{DoxyParams}{Parameters}
+{\em v} & \+: is the number of nodes of in the network. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_graph_ae1c6de99c64d91207da0d5d9693e1de6}\label{class_graph_ae1c6de99c64d91207da0d5d9693e1de6}} 
+\index{Graph@{Graph}!adj@{adj}}
+\index{adj@{adj}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{adj}{adj}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$int,unordered\+\_\+set$<$int$>$ $>$ Graph\+::adj}
+
+This defines the adjacency list for the graph. \mbox{\Hypertarget{class_graph_a826c94cb68830f7aac37c4f998abbb92}\label{class_graph_a826c94cb68830f7aac37c4f998abbb92}} 
+\index{Graph@{Graph}!adjT@{adjT}}
+\index{adjT@{adjT}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{adjT}{adjT}}
+{\footnotesize\ttfamily unordered\+\_\+map$<$int,unordered\+\_\+set$<$int$>$ $>$ Graph\+::adjT}
+
+This defines the transposed adjacency list for the graph. \mbox{\Hypertarget{class_graph_a23324531ae99747b494ef163d9339da7}\label{class_graph_a23324531ae99747b494ef163d9339da7}} 
+\index{Graph@{Graph}!v@{v}}
+\index{v@{v}!Graph@{Graph}}
+\doxysubsubsection{\texorpdfstring{v}{v}}
+{\footnotesize\ttfamily int Graph\+::v}
+
+This defines the number of vertices\textquotesingle{}s present in the current \mbox{\hyperlink{class_graph}{Graph}}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class__graph_8h}{class\+\_\+graph.\+h}}\end{DoxyCompactItemize}
